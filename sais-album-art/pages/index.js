@@ -8,7 +8,7 @@ import {
 } from '../public/images/albums'
 import heroBanner from '../public/images/hero-banner.png'
 import soundwaves from '../public/images/soundwaves.jpg'
-// import soundwavesSmall from '../public/images/soundwaves-small.jpg'
+import soundwavesSmall from '../public/images/soundwaves-small.jpg'
 
 import styles from './HomePage.module.scss'
 
@@ -42,10 +42,9 @@ function HomePage() {
         </span>
       </div>
       <div className={styles.soundwavesImage}>
-        <Image src={soundwaves} layout="responsive" />
+        <Image src={soundwavesSmall} layout="responsive" />
       </div>
     </>
-    //somethings on the way
   )
 }
 
