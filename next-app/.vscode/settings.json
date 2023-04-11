@@ -1,0 +1,23 @@
+{
+  "marquee.widgets.npm-stats.packageNames": ["next-app"],
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#12385f99",
+    "activityBar.background": "#12385f99",
+    "activityBar.foreground": "#3b4ebb",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#bc246f",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "commandCenter.border": "#e7e7e799",
+    "sash.hoverBorder": "#12385f99",
+    "statusBar.background": "#0a1f3499",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#12385f99",
+    "statusBarItem.remoteBackground": "#0a1f3499",
+    "statusBarItem.remoteForeground": "#e7e7e7",
+    "titleBar.activeBackground": "#0a1f3499",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#0a1f3499",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#0a1f3499"
+}
