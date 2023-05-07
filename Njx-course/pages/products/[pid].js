@@ -2,9 +2,9 @@ import path from "path"
 import fs from "fs/promises"
 function ProductDetailPage(props) {
   const { loadedProduct } = props
-  //   if(!loadedProduct){
-  //     return <p>Loading...</p>
-  //   }
+    if(!loadedProduct){
+      return <p>Loading...</p>
+    }
   return (
     <>
       <h1>{loadedProduct.title}</h1>
@@ -26,6 +26,9 @@ export async function getStaticProps(context) {
   const data = await getData()
 
   const product = data.products.find((product) => product.id === productId)
+  if(!product) {
+    return { notFound : true }
+  }
   return {
     props: {
       loadedProduct: product,
@@ -38,9 +41,9 @@ export async function getStaticPaths() {
     const pathsWithParams = ids.map(id => ({params: {pid:id}}))
     return {
     paths:   pathsWithParams ,
-    // fallback: true,
-    fallback: "blocking",
-    // if we use this we dont need the if (Loading ...) condition
+    fallback: true,
+    // fallback: "blocking",
+    // // if we use this we dont need the if (Loading ...) condition
   }
 }
 
